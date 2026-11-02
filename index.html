@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sundhar G — Test &amp; FA Engineering</title>
+    <meta
+      name="description"
+      content="Test and FA engineer with four years in electronics manufacturing, across telecom base stations, EV chargers, micro-inverters and iPhone main logic boards."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sundhar G — Test &amp; FA Engineering" />
+    <meta
+      property="og:description"
+      content="Test and FA engineer with four years in electronics manufacturing, across telecom base stations, EV chargers, micro-inverters and iPhone main logic boards."
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+    />
+
+    <!-- Runs before first paint so a dark-mode visitor never sees a light flash. -->
+    <script>
+      ;(function () {
+        var stored = null
+        try {
+          stored = localStorage.getItem('theme')
+        } catch (e) {}
+        var dark = stored ? stored === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches
+        document.documentElement.classList.toggle('dark', dark)
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
